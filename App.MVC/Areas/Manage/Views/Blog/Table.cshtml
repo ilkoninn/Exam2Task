@@ -1,0 +1,79 @@
+﻿@using App.Core.Entities
+<!-- Page Heading -->
+
+<div class="d-flex justify-content-around" style="margin-bottom:20px;">
+    <h1 class="h3 mb-2 text-gray-800">Blog Table</h1>
+
+    <a asp-action="Create" asp-controller="Blog">
+        <button class="btn btn-primary">Create</button>
+    </a>
+</div>
+
+<div asp-validation-summary=All>
+
+</div>
+
+<!-- DataTales Example -->
+<div class="card shadow mb-4">
+    <div class="card-header py-3">
+        <h6 class="m-0 font-weight-bold text-primary">DataTables Example</h6>
+    </div>
+    <div class="card-body">
+        <div class="table-responsive">
+            <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                <thead>
+                    <tr>
+                        <th>No.</th>
+                        <th>Title</th>
+                        <th>Description</th>
+                        <th>Cover Image</th>
+                        <th>Created Date</th>
+                        <th>Updated Date</th>
+                        <th>CRUD</th>
+                    </tr>
+                </thead>
+                <tfoot>
+                    <tr>
+                        <th>No.</th>
+                        <th>Title</th>
+                        <th>Description</th>
+                        <th>Cover Image</th>
+                        <th>Created Date</th>
+                        <th>Updated Date</th>
+                        <th>CRUD</th>
+                    </tr>
+                </tfoot>
+                <tbody>
+                    @{
+                        var count = 0;
+                    }
+                    @foreach (var item in (ViewData["Blogs"] as IQueryable<Blog>))
+                    {
+                        count++;
+                        <tr>
+                            <th>@count</th>
+                            <th>@item.Title</th>
+                            <th>@item.Description</th>
+                            <th>
+                                <div style="width:150px">
+                                    <img width="100%" src="~/Upload/BlogImages/@item.CoverImgUrl" />
+                                </div>
+                            </th>
+                            <th>@item.CreatedDate.ToString("hh:mm" + "\n" + "dd/MM/yyyy")</th>
+                            <th>@item.UpdatedDate.ToString("hh:mm" + "\n" + "dd/MM/yyyy")</th>
+                            <th>
+                                <a asp-action="Update" asp-controller="Blog" asp-route-id="@item.Id">
+                                    <button class="btn btn-warning">Update</button>
+                                </a><a asp-action="Detail" asp-controller="Blog" asp-route-id="@item.Id">
+                                    <button class="btn btn-success">Detail</button>
+                                </a><a asp-action="Delete" asp-controller="Blog" asp-route-id="@item.Id">
+                                    <button class="btn btn-danger">Delete</button>
+                                </a>
+                            </th>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

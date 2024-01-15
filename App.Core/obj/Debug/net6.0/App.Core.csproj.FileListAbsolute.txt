@@ -1,0 +1,13 @@
+C:\Users\II novbe\Desktop\AppMVC\App.Core\bin\Debug\net6.0\App.Core.deps.json
+C:\Users\II novbe\Desktop\AppMVC\App.Core\bin\Debug\net6.0\App.Core.dll
+C:\Users\II novbe\Desktop\AppMVC\App.Core\bin\Debug\net6.0\App.Core.pdb
+C:\Users\II novbe\Desktop\AppMVC\App.Core\obj\Debug\net6.0\App.Core.csproj.AssemblyReference.cache
+C:\Users\II novbe\Desktop\AppMVC\App.Core\obj\Debug\net6.0\App.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\II novbe\Desktop\AppMVC\App.Core\obj\Debug\net6.0\App.Core.AssemblyInfoInputs.cache
+C:\Users\II novbe\Desktop\AppMVC\App.Core\obj\Debug\net6.0\App.Core.AssemblyInfo.cs
+C:\Users\II novbe\Desktop\AppMVC\App.Core\obj\Debug\net6.0\App.Core.csproj.CoreCompileInputs.cache
+C:\Users\II novbe\Desktop\AppMVC\App.Core\obj\Debug\net6.0\App.Core.sourcelink.json
+C:\Users\II novbe\Desktop\AppMVC\App.Core\obj\Debug\net6.0\App.Core.dll
+C:\Users\II novbe\Desktop\AppMVC\App.Core\obj\Debug\net6.0\refint\App.Core.dll
+C:\Users\II novbe\Desktop\AppMVC\App.Core\obj\Debug\net6.0\App.Core.pdb
+C:\Users\II novbe\Desktop\AppMVC\App.Core\obj\Debug\net6.0\ref\App.Core.dll

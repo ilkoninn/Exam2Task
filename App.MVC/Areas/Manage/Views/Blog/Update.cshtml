@@ -1,0 +1,24 @@
+﻿@using App.Business.ViewModels.BlogVMs
+@model UpdateBlogVM
+
+<div class="container">
+    <form method="post" enctype="multipart/form-data">
+        <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Title</label>
+            <input asp-for="Title" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            <span asp-validation-for="Title" style="color: red;"></span>
+        </div>
+        <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Blog Image</label>
+            <input asp-for="File" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            <span asp-validation-for="File" style="color: red;"></span>
+        </div>
+        <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Description</label>
+            <input asp-for="Description" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            <span asp-validation-for="Description" style="color: red;"></span>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+</div>

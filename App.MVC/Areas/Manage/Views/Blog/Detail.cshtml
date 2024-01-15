@@ -1,0 +1,14 @@
+﻿@using App.Core.Entities;
+@model Blog
+
+<div class="container">
+    <h2>Blog Title: </h2>
+    <h4>@Model.Title</h4>
+    <h2>Blog Description: </h2>
+    <h4>@Model.Description</h4>
+    <h2>Blog Cover Image</h2>
+    <div style="width:200px">
+        <img width="100%" src="~/Upload/BlogImages/@Model.CoverImgUrl" />
+    </div>
+
+</div>
